@@ -4,7 +4,7 @@ const app = express();
 const http = require("http");
 
 // 1: Kirish Code
-app.use(express.static("public"));
+app.use("/public", express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
@@ -15,12 +15,13 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 // 4: Routing Code
-app.get("/hello", function(req, res) {
-    res.end("<h1>Hello World</h1>");
+app.post("/create-item", (req, res) => {
+    console.log(req.body);
+    res.json({test: "success"});
 });
 
-app.get("/gift", function(req, res) {
-    res.end("Salom, Siz sovgalar bolimidasiz");
+app.get("/", function(req, res) {
+    res.render("harid");
 });
 
 const server = http.createServer(app);
