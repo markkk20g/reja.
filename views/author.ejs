@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/public/main.css" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="frame">
+        <div class="main_frame">
+            <div class="left_frame">
+                <div class="left_1">
+                    <div class="left_1_1">
+                        <img src="/public/author/images/Profile.png" width="156px" height="142px" alt=""/>
+                    </div>
+                    <div class="left_1_2" style="font-weight:600">
+                        <%=user.name%>
+                    </div>
+                    <div class="left_1_3"><%=user.profession%></div>
+                    <div class="left_1_icons">
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="/public/author/btn_icon/Icons-facebook.svg" class="icon-1" />
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="/public/author/btn_icon/Icons-instagram.svg" class="icon-1" />
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="/public/author/btn_icon/Icons-twitter.svg" class="icon-1" />
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="/public/author/btn_icon/Icons-linkedin.svg" class="icon-1" />
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="/public/author/btn_icon/Icons-Youtube.svg" class="icon-1" />
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="/public/author/btn_icon/Icons-dribbble.svg" class="icon-1" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_2">
+                    <div class="left_2_1">
+                        <div class="left-2-pv">Age:</div>
+                        <div class="left-2-vl"><%=user.age%></div>
+                    </div>
+                    <div class="left_2_2">
+                        <div class="left-2-pv">Residence:</div>
+                        <div class="left-2-vl" ><%=user.residence%></div>
+                    </div>
+                    <div class="left_2_3">
+                        <div class="left-2-pv">Freelance:</div>
+                        <div class="left-2-vl" style="color: #76ba1b;">Available</div>
+                    </div>
+                    <div class="left_2_4">
+                        <div class="left-2-pv">Address:</div>
+                        <div class="left-2-vl"><%=user.address%></div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_3">
+                    <div class="left_3-main">Languages</div>
+                    <div class="left_3-name">
+                        <div><%=user.languages[0]%></div>
+                        <div>100%</div>
+                    </div>
+                    <div class="left_3-prog">
+                        <div class="left_3-prog-sub" style="width: 218px;"></div>
+                    </div>
+                    <div class="left_3-name">
+                        <div><%=user.languages[1]%></div>
+                        <div>80%</div>
+                    </div>
+                    <div class="left_3-prog">
+                        <div class="left_3-prog-sub" style="width: 187px;"></div>
+                    </div>
+                    <div class="left_3-name">
+                        <div><%=user.languages[2]%></div>
+                        <div>80%</div>
+                    </div>
+                    <div class="left_3-prog">
+                        <div class="left_3-prog-sub" style="width: 187px;"></div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_4">
+                    <div class="left_4-main">Skills</div>
+                    <div class="left_4-name">
+                        <div><%=user.skills[0]%></div>
+                        <div>90%</div>
+                    </div>
+                    <div class="left_4-prog">
+                        <div class="left_4-prog-sub" style="width: 202px"></div>
+                    </div>
+                    <div class="left_4-name">
+                        <div><%=user.skills[1]%></div>
+                        <div>85%</div>
+                    </div>
+                    <div class="left_4-prog">
+                        <div class="left_4-prog-sub" style="width: 193px;"></div>
+                    </div>
+                    <div class="left_4-name">
+                        <div><%=user.skills[2]%></div>
+                        <div>80%</div>
+                    </div>
+                    <div class="left_4-prog">
+                        <div class="left_4-prog-sub" style="width: 187px;"></div>
+                    </div>
+                    <div class="left_4-name">
+                        <div><%=user.skills[3]%></div>
+                        <div>75%</div>
+                    </div>
+                    <div class="left_4-prog">
+                        <div class="left_4-prog-sub" style="width: 177px;"></div>
+                    </div>
+                    <div class="left_4-name">
+                        <div><%=user.skills[4]%></div>
+                        <div>85%</div>
+                    </div>
+                    <div class="left_4-prog">
+                        <div class="left_4-prog-sub" style="width: 193px;"></div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_5">
+                    <div class="left_5-main">Extra Skills</div>
+                    <div class="left_5-sub">
+                        <div class="left_5-icon"><img src="/public/author/icon/Icons-exs.svg" width="15px" alt=""></div>
+                        <div class="left_5-name"><%=user.extra_skills[0]%></div>
+                    </div>
+                    <div class="left_5-sub">
+                        <div class="left_5-icon"><img src="/public/author/icon/Icons-exs.svg" width="15px" alt=""></div>
+                        <div class="left_5-name"><%=user.extra_skills[1]%></div>
+                    </div>
+                    <div class="left_5-sub">
+                        <div class="left_5-icon"><img src="/public/author/icon/Icons-exs.svg" width="15px" alt=""></div>
+                        <div class="left_5-name"><%=user.extra_skills[2]%></div>
+                    </div>
+                    <div class="left_5-sub">
+                        <div class="left_5-icon"><img src="/public/author/icon/Icons-exs.svg" width="15px" alt=""></div>
+                        <div class="left_5-name"><%=user.extra_skills[3]%></div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+            </div>
+            <div class="mid_frame">
+                <div class="mid_1">
+                    <div class="mid_1-1">
+                        <div class="mid_1-title">Software Engineer in South Korea</div>
+                        <div class="mid_1-info">Lorem ipsum dolor sit amet consectetur 
+                            adipiscing elit tristique, turpis cursus inceptos nulla 
+                            lectus mi potenti lacus auctor, accumsan gravida ullamcorper 
+                            odio id nullam proin.</div>
+                        <div class="mid_1-btn">
+                            <button>
+                            <div class="mid_1-btn-1">HIRE ME</div>
+                            <div class="mid_1-btn-icon"><img src="/public/author/icon/arrow-right.svg" width="16px" height="16px" alt="arrow right"/></div>
+                            </button>                                                       
+                        </div>
+                    </div>
+                    <div class="mid_1-2">
+                        <div class="mid_1-2-img"><img src="/public/author/images/Your Image 1.png"></div>
+                    </div>
+                </div>
+                <div class="mid_2">
+                    <div class="mid_2-1">
+                        <div class="mid_2-1title">My Services</div>
+                        <div class="mid_2-1par"><p>Et molestie rutrum per luctus morbi vel integer 
+                            donec cras auctor, lacinia eros ornare augue praesent 
+                            sagittis tempus dolor est aliqua</p>
+                        </div>
+                    </div>
+                    <div class="mid_2-box">
+                        <div class="mid_2-box1">
+                            <div class="mid_2-icon"><img src="/public/author/icon/coding.png"></div>
+                            <div class="mid_2-title">Web Development</div>
+                            <div class="mid_2-info">Blog, E-Commerce</div>
+                        </div>
+                        <div class="mid_2-box2">
+                            <div class="mid_2-icon"><img src="/public/author/icon/illustration.png"></div>
+                            <div class="mid_2-title">UI/UX Design</div>
+                            <div class="mid_2-info">Mobile App, Website Design</div>
+                        </div>
+                        <div class="mid_2-box3">
+                            <div class="mid_2-icon"><img src="/public/author/icon/Microphone.png"/></div>
+                            <div class="mid_2-title">sound design</div>
+                            <div class="mid_2-info">Voice Over, Beat Making</div>
+                        </div>
+                        <div class="mid_2-box4">
+                            <div class="mid_2-icon"><img src="/public/author/icon/game-development.png"></div>
+                            <div class="mid_2-title">game design</div>
+                            <div class="mid_2-info">Character Design, Props & Objects</div>
+                        </div>
+                        <div class="mid_2-box5">
+                            <div class="mid_2-icon"><img src="/public/author/icon/Icons_Photographer.png"></div>
+                            <div class="mid_2-title">photography</div>
+                            <div class="mid_2-info">portrait, product photography</div>
+                        </div>
+                        <div class="mid_2-box6">
+                            <div class="mid_2-icon"></div>
+                            <div class="mid_2-title">advertising</div>
+                            <div class="mid_2-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Vitae nulla diam in ac dictum a urna viverra morbi. </div>
+                            <div class="mid_2-box6-link"><a href="">ORDER NOW ></a></div>
+                        </div>
+                    </div>
+                    <div class="mid_2-text"></div>
+                </div>
+                <div class="mid_3">
+                    <div class="mid_3-1"><img src="/public/author/shapes/Ellipse 12.svg" alt=""></div>
+                    <div class="mid_3-2"><img src="/public/author/shapes/Ellipse 15.svg"  alt=""></div>
+                    <div class="mid_3-3"><img src="/public/author/shapes/Ellipse 12.svg" alt=""></div>
+                    <div class="mid_3-4"><img src="/public/author/shapes/Ellipse 15.svg"  alt=""></div>
+                    <div class="mid_3-5"><img src="/public/author/shapes/triangle.svg"  alt=""></div>
+                    <div class="mid_3-6"><img src="/public/author/shapes/Rectangle 52.svg"  alt=""></div>
+                    <div class="mid_3-7"><img src="/public/author/shapes/Rectangle 51.png"  alt=""></div>
+                </div>
+            </div>
+            <div class="right_frame">
+                <div class="right_1">
+                    <div class="right_1-1"><img src="/public/author/menu_icon/Icons_night.svg" width="30px" alt=""></div>
+                    <div class="right_1-2"><img src="/public/author/menu_icon/home-button.svg"></div>
+                </div>
+                <div class="right_2">
+                    <div class="right_2-box" style="background-color: #ffb400;">
+                        <div class="right_2-box-icon"><img src="/public/author/menu_icon/Icons_Home.svg" alt=""></div>
+                    </div>
+                    <div class="right_2-box">
+                        <div class="right_2-box-icon"><img src="/public/author/menu_icon/file-code.svg" alt=""></div>
+                    </div>
+                    <div class="right_2-box">
+                        <div class="right_2-box-icon"><img src="/public/author/menu_icon/Icons_stud.svg" alt=""></div>
+                    </div>
+                    <div class="right_2-box">
+                        <div class="right_2-box-icon"><img src="/public/author/menu_icon/suitcase.png" 
+                            height="18px" alt=""></div>
+                    </div>
+                    <div class="right_2-box">
+                        <div class="right_2-box-icon"><img src="/public/author/menu_icon/Icons_Blog.svg" alt=""></div>
+                    </div>
+                    <div class="right_2-box">
+                        <div class="right_2-box-icon"><img src="/public/author/menu_icon/Icons_Contact.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
