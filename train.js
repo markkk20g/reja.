@@ -1,21 +1,46 @@
 
+// TASK B
+
+// Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
+// string tarkibidagi sonlar miqdorini qaytarsin
+
+// countDigits("ad2a54y79wet0sfgb9")
+// Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi
+
+
+function countDigits(text) {
+  let total = 0;
+  const num = '0123456789';
+  for (let i = 0; i < text.length; i++) {
+    if (num.includes(text[i])) {
+      total++;
+    }
+  }
+  return total;
+}
+
+const result = countDigits('ad2a54y79wet0sfgb9');
+console.log(result);
+
+
+
 // A-TASK: 
 
 // Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni 
 // ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
 // MASALAN countLetter("e", "engineer") 3ni return qiladi.
 
-function countLetter(letter, word) {
-    // const i = word.split(letter).length-1; 
-    // return i;
-    const a = letter.toLowerCase();
-    const b = word.toLowerCase()
-    const c = b.split(a).length-1;
-    return c;
-}
+// function countLetter(letter, word) {
+//     // const i = word.split(letter).length-1; 
+//     // return i;
+//     const a = letter.toLowerCase();
+//     const b = word.toLowerCase()
+//     const c = b.split(a).length-1;
+//     return c;
+// }
 
-const run = countLetter("e", "engineer");
-console.log(run);
+// const run = countLetter("e", "engineer");
+// console.log(run);
 
 
 
