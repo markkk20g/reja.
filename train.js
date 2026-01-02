@@ -1,5 +1,5 @@
 /*
-ASK-C
+TASK-C
 
 Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
 Hamda classning quyidagdek 3'ta metodi bo'lsin:
