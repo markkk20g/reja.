@@ -22,6 +22,7 @@ document.getElementById('create-form').addEventListener('submit', (e) => {
         document.getElementById('item-list').insertAdjacentHTML('beforeend', itemTemplate(response.data))
         createField.value = '';
         createField.focus();
+        document.location.reload();
     }).catch((err) => {
         console.log('Istimos qaytadan harakat qiling');
     });
@@ -42,7 +43,26 @@ document.addEventListener('click', (e) => {
     }
 
     // edit operations
-    if(e.target.classList.contains('edit-me')){
-        alert('siz editni bosdingiz');
+    if(e.target.classList.contains("edit-me")){
+        const itemText = e.target.parentElement.parentElement.querySelector(".item-text").innerHTML;
+        let userInput = prompt("O'zgartirish kiritish", itemText);
+        if(userInput){
+            axios.post("/edit-item", {
+                id: e.target.getAttribute('data-id'), 
+                new_input: userInput})
+                .then((response)=>{
+                    console.log(response.data);
+                    e.target.parentElement.parentElement.querySelector(".item-text").innerHTML = userInput;
+            }).catch((err)=>{
+                console.log('Istimos qaytadan harakat qiling');
+            });
+        }
     }
 })
+
+document.getElementById("clean-all").addEventListener("click", function() {
+    axios.post("/delete-all", { delete_all: true}).then((response) => {
+        alert(response.data.state);
+        document.location.reload();
+    });
+});

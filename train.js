@@ -1,4 +1,29 @@
 /*
+TASK D
+
+Ikkita parametra ega function tuzing, va functioning
+berilgan birinchi va ikkinchi parametr qiymatlari o'zaro to'liq
+mos kelsa true qiymat qaytarsin
+
+Masalan: checkContent("mitgroup", "gmtiprou");
+Yuqoridagi misolda birinchi va ikkinchi parametr qiymatli bir xil
+ya'ni bir xil harflar qatnashganligi uchun true qiymat qaytaradi.
+*/
+
+function checkContent(a, b) {
+    const first = a.toLowerCase().split('').sort().toString('');
+    const second = b.toLowerCase().split('').sort().toString('');
+    if(a.length === b.length && first === second) {
+        return true;
+    } else {
+        return `ERROR`;
+    }
+}
+
+const c = checkContent("mitgroup", "gmtiprou");
+console.log(c);
+
+/*
 TASK-C
 
 Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
@@ -20,6 +45,7 @@ shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
 Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!
 */ 
 
+/*
 const moment = require('moment');
 
 const time = moment().format('HH:mm');
@@ -74,7 +100,7 @@ shop.qoldiq();
 shop.sotish('non', 3);
 shop.qabul('cola', 4);
 shop.qoldiq();
-
+*/
 
 
 // TASK B
