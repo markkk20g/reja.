@@ -49,7 +49,7 @@ app.get("/author", (req, res) => {
 
 app.post("/edit-item", (req, res)=> {
     const data = req.body;
-    console.log(data);
+    // console.log(data);
     db.collection("plans").findOneAndUpdate({_id: new mongodb.ObjectId(data.id)}, {
         $set: {reja: data.new_input}
     }, function(err, data){
