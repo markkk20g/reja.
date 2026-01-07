@@ -1,4 +1,19 @@
 /*
+E-TASK: 
+
+Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+
+function getReverse(a) {
+    let b = a.split('').reverse().join('');
+    return b;
+}
+const c = getReverse('hello');
+console.log(c);
+
+
+/*
 TASK D
 
 Ikkita parametra ega function tuzing, va functioning
@@ -10,18 +25,18 @@ Yuqoridagi misolda birinchi va ikkinchi parametr qiymatli bir xil
 ya'ni bir xil harflar qatnashganligi uchun true qiymat qaytaradi.
 */
 
-function checkContent(a, b) {
-    const first = a.toLowerCase().split('').sort().toString('');
-    const second = b.toLowerCase().split('').sort().toString('');
-    if(a.length === b.length && first === second) {
-        return true;
-    } else {
-        return `ERROR`;
-    }
-}
+// function checkContent(a, b) {
+//     const first = a.toLowerCase().split('').sort().toString('');
+//     const second = b.toLowerCase().split('').sort().toString('');
+//     if(a.length === b.length && first === second) {
+//         return true;
+//     } else {
+//         return `ERROR`;
+//     }
+// }
 
-const c = checkContent("mitgroup", "gmtiprou");
-console.log(c);
+// const c = checkContent("mitgroup", "gmtiprou");
+// console.log(c);
 
 /*
 TASK-C
